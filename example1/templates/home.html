@@ -45,6 +45,25 @@
         <button type="submit">submit</button>
     </form>
 </div>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>email</td>
+        <td>Place</td>
+        <td>Mobile No</td>
+    </tr>
+
+{% for row in ups %}
+    <tr>
+        <td>{{row.name}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.place}}</td>
+        <td>{{row.mobile_no}}</td>
+    </tr>
+{% endfor %}
+</table>
+
 <!-- Default form register -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
