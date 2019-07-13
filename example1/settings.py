@@ -14,7 +14,8 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+print(BASE_DIR)
+print()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -27,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "example85.ap-south-1.elasticbeanstalk.com",
+    "127.0.0.1",
 ]
 
 
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'example1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR+"/example1/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,6 +72,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'example1.wsgi.application'
+
+# aapol5x30yrqhy
 
 
 # Database

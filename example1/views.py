@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def helloview(request):
-    return HttpResponse("Hello Mahesh")
+def hello_view(request):
+    if request.method == "POST":
+        pass
+
+    return render(request, "home.html")
