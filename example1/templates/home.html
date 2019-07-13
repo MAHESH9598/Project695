@@ -46,20 +46,20 @@
     </form>
 </div>
 
-<table>
+<table border="1" cellspacing="5">
     <tr>
         <td>Name</td>
-        <td>email</td>
         <td>Place</td>
         <td>Mobile No</td>
+        <td>email</td>
     </tr>
 
 {% for row in ups %}
     <tr>
         <td>{{row.name}}</td>
-        <td>{{row.email}}</td>
         <td>{{row.place}}</td>
         <td>{{row.mobile_no}}</td>
+        <td>{{row.email}}</td>
     </tr>
 {% endfor %}
 </table>
