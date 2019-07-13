@@ -26,7 +26,7 @@ SECRET_KEY = 'up_e+uuq-0g23t!&x27x^05jw5#jostefr2%4g0ei#cetgt(pt'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "*.ap-south-1.elasticbeanstalk.com",
+    "example85.ap-south-1.elasticbeanstalk.com",
 ]
 
 
