@@ -1,69 +1,53 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Registration Form</title>
-<link rel="stylesheet" href="static/css/Material Design Bootstrap_2_files/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="static/css/Material Design Bootstrap_2_files/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="static/css/Material Design Bootstrap_2_files/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="static/css/Material Design Bootstrap_2_files/style.css" rel="stylesheet">
-  <link href="static/css/march5.css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<style>
-body{
-background-color:#043927;
-}
-</style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Hello, world!</title>
 </head>
 <body>
 <!-- Default form register -->
-<form action="./regtodynamo" method="POST">
-  <label>
-    <p class="label-txt">ENTER YOUR NAME</p>
-    <input type="text" class="input" name="CUSTEMER_ID">
-    <div class="line-box">
-      <div class="line"></div>
-    </div>
-  </label>
-  <label>
-    <p class="label-txt">ENTER YOUR PLACE</p>
-    <input type="text" class="input" name="PLACE">
-    <div class="line-box">
-      <div class="line"></div>
-    </div>
-  </label>
-  <label>
-    <p class="label-txt">ENTER YOUR PHONE NUMBER</p>
-    <input type="text" class="input" name="PHNO">
-    <div class="line-box">
-      <div class="line"></div>
-    </div>
-  </label>
-  <label>
-    <p class="label-txt">ENTER YOUR IMAGE</p>
-    <input type="file" class="input" name="IMG">
-    <div class="line-box">
-      <div class="line"></div>
-    </div>
-  </label>
-  <button type="submit">submit</button>
-</form>
-
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <label>
+            <p class="label-txt">ENTER YOUR NAME</p>
+            <input type="text" class="input" name="name" required>
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </label>
+        <label>
+            <p class="label-txt">ENTER YOUR PLACE</p>
+            <input type="text" class="input" name="place" required>
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </label>
+        <label>
+            <p class="label-txt">ENTER YOUR PHONE NUMBER</p>
+            <input type="text" class="input" name="pn_no" required>
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </label>
+        <label>
+            <p class="label-txt">email</p>
+            <input type="email" class="input" name="email" required>
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+        </label>
+        <button type="submit">submit</button>
+    </form>
+</div>
 <!-- Default form register -->
-
-
-  <!------- scripts-------->
-<script type="text/javascript" src="static/js/Material Design Bootstrap_2_files/jquery-3.3.1.min.js.download"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="static/js/Material Design Bootstrap_2_files/popper.min.js.download"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="static/js/Material Design Bootstrap_2_files/bootstrap.min.js.download"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="static/js/Material Design Bootstrap_2_files/mdb.js.download"></script>
-  <script type="text/javascript" src="static/js/march5.js"></script>
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

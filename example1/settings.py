@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "example85.ap-south-1.elasticbeanstalk.com",
     "127.0.0.1",
+    "localhost",
 ]
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "website.apps.WebsiteConfig",
 ]
 
 MIDDLEWARE = [
@@ -73,18 +75,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'example1.wsgi.application'
 
-# aapol5x30yrqhy
+#
 
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': "aapol5x30yrqhy.cerij5k687bq.ap-south-1.rds.amazonaws.com",
+        'NAME': "aapol5x30yrqhy",
+        "USER": "mahesh2020",
+        "PASSWORD": "nadiMikandriga123&"
+    }
+}
 
 
 # Password validation
